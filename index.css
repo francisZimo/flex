@@ -1,0 +1,26 @@
+/*.box{*/
+   /*flex-direction: row;*/
+   /*!*flex-direction: row-reverse;*!*/
+   /*!*flex-direction: column;*!*/
+   /*!*flex-direction: column-reverse;*!*/
+/*}*/
+.box1{
+    border:1px solid red;
+    width:200px;
+    height:200px;
+    display: flex;
+    /*在交叉轴上如何对称*/
+    align-items:center;
+}
+.box2{
+    border:1px solid red;
+    width:200px;
+    height:200px;
+    display: flex;
+    justify-content: center;
+}
+.item{
+    width:50px;
+    height:50px;
+
+}

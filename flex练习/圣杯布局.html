@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .holyGrail{
+            display: flex;
+            min-height:100vh;
+            flex-direction: column;
+        }
+        header,footer{
+            flex:1;
+            background-color: #dadada;
+        }
+        .holyGrail-body{
+            background-color: aqua;
+            display: flex;
+            flex:1
+        }
+        .holyGrail-content{
+            flex:1;
+        }
+        .holyGrail-nav,.holyGrail-ads{
+            flex:0 0 12em;
+        }
+        .holyGrail-nav{
+            order:-1;
+        }
+        @media (max-width: 768px) {
+            body{
+                border:1px solid red;
+            }
+          body  .holyGrail-body {
+                background-color: red;
+                flex-direction: column;
+                flex: 1;
+            }
+           body .holyGrail-nav, .holyGrail-ads, .holyGrail-content {
+                flex: 1;
+            }
+        }
+    </style>
+</head>
+<body class="holyGrail">
+<header>头部</header>
+<div class="holyGrail-body">
+    <main class="holyGrail-content">主要内容</main>
+    <nav class="holyGrail-nav" style="background-color: orange">Nav</nav>
+    <aside class="holyGrail-ads" style="background-color: orange">aside</aside>
+</div>
+<footer>尾部</footer>
+</body>
+</html>

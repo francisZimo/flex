@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body{
+            color:white;
+            font-size: 20px;
+        }
+        .box{
+            width:100px;
+            height:100px;
+            background-color: #fafafa;
+            border:20px solid #dadada;
+            border-radius: 5px;
+            display: inline-flex;
+            margin-bottom: 20px;
+
+        }
+        .item{
+            display:inline-block;
+            width:30px;
+            height: 30px;
+            background-color: black;
+            border-radius: 50%;
+            margin-right:3px;
+        }
+        .Grid{
+            display: flex;
+        }
+        .Grid-cell{flex:1; background-color: #dadada; }
+    </style>
+</head>
+<body style="background-color: black">
+<h3>单项目</h3>
+    <div class="box">
+        <span class="item">
+        </span>
+    </div>
+    <div class="box" style="justify-content: center">
+        <span class="item">
+        </span>
+    </div>
+    <div class="box" style="justify-content: flex-start">
+        <span class="item">
+        </span>
+    </div>
+    <div class="box" style="justify-content: flex-end">
+        <span class="item">
+        </span>
+    </div>
+    <div class="box" style="justify-content: center; align-items:center">
+        <span class="item"></span>
+    </div>
+    <div class="box" style="justify-content: flex-start; align-items:flex-end">
+        <span class="item">
+        </span>
+    </div>
+    <div class="box" style="justify-content: flex-end; align-items:flex-start">
+        <span class="item">
+        </span>
+    </div>
+<h3>双项目</h3>
+<div class="box" style="justify-content: space-between">
+        <span class="item"></span>
+        <span class="item"></span>
+</div>
+<div class="box" style="justify-content: space-between; flex-direction: column">
+    <span class="item"></span>
+    <span class="item"></span>
+</div><div class="box" style="justify-content: space-between; flex-direction: column; align-items:center; ">
+    <span class="item"></span>
+    <span class="item"></span>
+</div>
+
+<div class="box" style="justify-content: space-between; flex-direction: column; align-items:flex-end; ">
+    <span class="item"></span>
+    <span class="item"></span>
+</div>
+
+<div class="box" style=" ">
+    <span class="item"></span>
+    <span class="item" style="align-self:center; "></span>
+</div>
+<div class="box" style="justify-content: space-between ">
+    <span class="item"></span>
+    <span class="item" style="align-self:flex-end;"></span>
+</div>
+<h3>三项目</h3>
+<div class="box" style="justify-content: space-between ">
+    <span class="item"></span>
+    <span class="item" style="align-self:center; "></span>
+    <span class="item" style="align-self:flex-end; "></span>
+</div>
+<h3>四项目</h3>
+<div class="box" style="flex-wrap:wrap; justify-content: flex-end;  align-content:space-between ; ">
+    <span class="item"></span>
+    <span class="item"></span>
+    <span class="item"></span>
+    <span class="item"></span>
+</div>
+<div class="box" style="display: flex; align-content: space-between; flex-wrap: wrap  ">
+    <div class="column" style="display: flex; flex-basis: 100%; justify-content: space-between">
+        <span class="item"></span>
+        <span class="item"></span>
+    </div>
+    <div class="column" style="display: flex; flex-basis: 100%; justify-content: space-between">
+        <span class="item" ></span>
+        <span class="item"></span>
+    </div>
+</div>
+<h3>六项目</h3>
+<div class="box" style="flex-wrap:wrap;   align-content:space-between ; ">
+    <span class="item"></span>
+    <span class="item"></span>
+    <span class="item"></span>
+    <span class="item"></span>
+    <span class="item"></span>
+    <span class="item"></span>
+</div>
+<div class="box" style="flex-wrap:wrap; flex-direction: column; align-content: space-between ">
+    <span class="item"></span>
+    <span class="item"></span>
+    <span class="item"></span>
+    <span class="item"></span>
+    <span class="item"></span>
+    <span class="item"></span>
+</div>
+<div class="box" style="flex-wrap:wrap; ">
+    <div class="row" style="flex-basis: 100%; display: flex ">
+        <span class="item"></span>
+        <span class="item"></span>
+        <span class="item"></span>
+    </div>
+   <div class="row"  style="flex-basis: 100%; display: flex; justify-content: center">
+       <span class="item"></span>
+   </div>
+    <div class="row"  style="flex-basis: 100%; display: flex; justify-content: space-between ">
+        <span class="item"></span>
+        <span class="item"></span>
+    </div>
+</div>
+<div class="box" style="flex-wrap: wrap">
+    <span class="item"></span>
+    <span class="item"></span>
+    <span class="item"></span>
+    <span class="item"></span>
+    <span class="item"></span>
+    <span class="item"></span>
+    <span class="item"></span>
+    <span class="item"></span>
+    <span class="item"></span>
+</div>
+<h3 style="color:orangered">网格布局</h3>
+<div class="Grid">
+    <div class="Grid-cell">1</div>
+    <div class="Grid-cell" style="background-color: orangered">1</div>
+    <div class="Grid-cell">1</div>
+</div>
+</body>
+</html>

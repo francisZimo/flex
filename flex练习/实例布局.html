@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实例布局</title>
+    <style>
+        .Grid{
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .Grid-cell{flex:1; background-color: #dadada; }
+        .media{
+            display: flex;
+            align-items: flex-start;
+            width:300px;
+        }
+        .media-figure{
+            margin-right:1em;
+        }
+        .media-figure2{
+            /*align-self: center;*/
+            margin-right:1em;
+        }
+        .media-body{
+            flex:1
+        }
+        .parent{
+            width:200px;
+            height:150px;
+            background-color: black;
+            display: flex;
+            flex-flow: row wrap;
+            align-content:flex-start;
+        }
+        .child{
+            box-sizing: border-box;
+            background-color: white;
+            flex:0 0 25%;
+            height:50px;
+            border:1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h3>基本网格布局</h3>
+    <div class="Grid">
+        <div class="Grid-cell">1</div>
+        <div class="Grid-cell" style="background-color: orangered">1</div>
+        <div class="Grid-cell">1</div>
+    </div>
+    <h3>百分比布局</h3>
+    <div class="Grid">
+        <div class="Grid-cell">1</div>
+        <div class="" style="flex-basis: 100px; background-color:green">2</div>
+    </div>
+    <div class="Grid">
+        <div class="Grid-cell">1</div>
+        <div class="" style="flex-basis: 100px; background-color:green">2</div>
+        <div class="Grid-cell" style="flex:4">3</div>
+    </div>
+    <h3>输入框布局</h3>
+    <div class="Grid">
+        <span class="InputAddOn-item" style="">...</span>
+        <input class="InputAddOn-field" style="flex:1">
+        <button class="InputAddOn-item" style="">...</button>
+    </div>
+    <h3>悬挂式布局</h3>
+    <div class="media">
+        <img class="media-figure"  src="cat.png" alt="">
+        <p class="media-body">测试时杀死后四十四hi是是hi收拾收拾</p>
+    </div>
+    <div class="media">
+        <img class="media-figure" style="align-self: center"  src="cat.png" alt="">
+        <p class="media-body">测试时杀死后四十四hi是是hi收拾收拾测试时杀死后四十四hi是是hi收拾收拾测试时杀死后四十四hi是是hi收拾收拾测试时杀死后四十四hi是是hi测试时杀死后四十四hi是是hi收拾收拾</p>
+    </div>
+    <h3>流式布局</h3>
+    <div class="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+</body>
+</html>
